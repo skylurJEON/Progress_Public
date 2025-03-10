@@ -21,25 +21,19 @@ export default function HomeScreen() {
 
   const currentTheme = themes.find(theme => theme.isSelected) || {
     ...themes[0],
-    backgroundImage: require('../assets/background/sunset.png'),
+    //backgroundImage: require('../assets/background/sunset.png'),
   };
   
   useEffect(() => {
-    //console.log('현재 테마: ', themes);
+    //현재 테마
     const { progressPercentage } = getCurrentDate();
     setProgress(parseFloat(progressPercentage));
   }, []);
 
   return (
-    // <ImageBackground 
-    //    source={currentTheme.backgroundImage || require('../assets/background/sunset.png')} 
-    //    style={styles.background}
-    //    resizeMode="cover"
-    // >
     <View style={styles.container}>
       <ProgressBar />
     </View>
-    // </ImageBackground>
   );
 }
 

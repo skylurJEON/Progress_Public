@@ -14,7 +14,6 @@ import ThemeScreen from "../screens/ThemeScreen";
 import DaySelectScreen from "../screens/DaySelectScreen";
 import SocialScreen from "../screens/SocialScreen";
 import SettingScreen from "../screens/SettingScreen";
-//import { TouchableOpacity } from 'react-native';
 
 export type RootStackParamList = {
   HomeScreen: undefined;

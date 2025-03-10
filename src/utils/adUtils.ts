@@ -2,14 +2,7 @@ import { RewardedAd, RewardedAdEventType, TestIds } from 'react-native-google-mo
 import { loadThemes, saveThemes } from './storage';
 import { Theme } from '../store/themeState';
 
-// 광고 단위 ID 설정 (테스트 중에는 TestIds.REWARDED 사용)
-//const adUnitId = __DEV__ ? TestIds.REWARDED : 'ca-app-pub-3940256099942544/1712485313';
-
-const adUnitId = 'ca-app-pub-6902389668499711/3431907768';
-// RewardedAd 인스턴스 생성
-// const rewarded = RewardedAd.createForAdRequest(adUnitId, {
-//   keywords: ['game', 'rewards'],
-// });
+const adUnitId = 'ca-app-pub-YOUR_AD_ID';
 
 // 광고 인스턴스 생성 및 사전 로딩
 let rewarded = RewardedAd.createForAdRequest(adUnitId, {

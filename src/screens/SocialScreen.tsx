@@ -27,7 +27,7 @@ export default function SocialScreen() {
         await Share.open({
         url: uri,
         title: 'Share Progress',
-        //message: 'Check out my progress!',
+        //message: '',
       });
     } catch (error) {
       if (String(error).includes('User did not share')) {

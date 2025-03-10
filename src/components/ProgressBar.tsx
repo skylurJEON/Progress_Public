@@ -57,15 +57,12 @@ const styles = StyleSheet.create({
   wrapper: {
     width: '80%',
     alignItems: 'center',
-    //marginBottom: 0,
   },
   shadowContainer: {
-    // 그림자를 위한 별도 컨테이너
     width: '100%',
     height: 20,
     borderRadius: 10,
 
-    // 그림자 추가
     shadowColor: 'black',
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.2,
@@ -80,8 +77,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     overflow: 'hidden',
     marginTop: 10,
-    
-    
   },
   progress: {
     height: '90%',
@@ -91,8 +86,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.7,
     shadowRadius: 8,
-
-    elevation: 8, // Android용 그림자
+    elevation: 8, //android
   },
   percentage: {
     fontSize: 38,
